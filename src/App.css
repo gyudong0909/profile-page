@@ -4,8 +4,17 @@
   padding: 2rem;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* 배경색 추가 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh; /* 전체 높이 사용 */
 }
 
+body {
+  margin: 0;
+  background-color: #f0f4f8; /* 부드러운 색상으로 배경 지정 */
+}
 .profile {
   margin-top: 2rem;
 }
