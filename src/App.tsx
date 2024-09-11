@@ -1,40 +1,32 @@
 import './App.css';
-
 import { useState } from 'react';
-
-import viteLogo from '/vite.svg';
-
-import reactLogo from './assets/react.svg';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => {
-            setCount(count + 1);
-          }}
-        >
-          count is {count}
-        </button>
+      <header>
+        <h1>박규동 프로필</h1>
+      </header>
+      <section className="profile">
+        <img
+          src="/path-to-your-image.jpg"
+          alt="Profile Picture"
+          className="profile-picture"
+        />
+        <h2>Gyudong Park</h2>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          안녕하세요! 조선해양공학과 21학번 박규동입니다. 
+          풀스택 개발자가 되는 것이 목표에요. 프론트엔드부터 차근차근 열심히 배워나갈 생각입니다. 잘 부탁드려요.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h3>Contact Me</h3>
+        <p>Email: gyudong0909@snu.ac.kr</p>
+        <p>GitHub: <a href="https://github.com/gyudong0909" target="_blank" rel="noreferrer">github.com/gyudong0909</a></p>
+      </section>
+      <footer>
+        <p>Built with React and Vite</p>
+      </footer>
     </>
   );
 }
