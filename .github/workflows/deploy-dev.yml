@@ -31,4 +31,4 @@ jobs:
           AWS_REGION: ap-northeast-2
         run: |
           aws s3 sync ./dist s3://wafflesttudio2024 --delete
-          aws cloudfront create-invalidation --distribution-id E2ICTQAN036S --paths "/*"
+          aws cloudfront create-invalidation --distribution-id E2ICTQAN036SCX --paths "/*"
