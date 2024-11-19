@@ -1,4 +1,4 @@
-name: deploy-dev
+name: deploy-prod
 
 on:
   workflow_dispatch:
@@ -27,5 +27,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-northeast-2
         run: |
-          aws s3 sync ./dist s3://wafflesttudio2024 --delete
-          aws cloudfront create-invalidation --distribution-id E2ICTQAN036S --paths "/*"
+          aws s3 sync ./dist s3://wafflesttudio2024-prod --delete
+          aws cloudfront create-invalidation --distribution-id EPGUMWFB55QXT --paths "/*"
